@@ -37,6 +37,7 @@ public class Shop {
         return storage.getBoolean(String.valueOf(itemId), false);
     }
 
+
     public void setRated(int itemId, boolean isRated) {
         storage.edit().putBoolean(String.valueOf(itemId), isRated).apply();
     }
