@@ -21,6 +21,11 @@ A scrollable list of items that centers the current element and provides easy-to
 
 </kbd>
 
+<kbd>
+
+## Weather Activity
+<video src="https://github.com/user-attachments/assets/cf23d16b-7f59-4db6-8d14-10d36f46b26c" width="30" height="40" />
+</kbd>
 
 ## Usage
 
