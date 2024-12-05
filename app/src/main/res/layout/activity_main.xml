@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yarolegovich.mp.MaterialPreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen"
+    android:layoutDirection="ltr"
+    android:background="#E1E1E1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.yarolegovich.mp.MaterialPreferenceCategory
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="5dp"
+        app:mpc_title="@string/card_title_preview">
+
+        <com.yarolegovich.mp.MaterialRightIconPreference
+            android:id="@+id/preview_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mp_icon="@drawable/ic_shopping_black_24dp"
+            app:mp_icon_tint="@color/black"
+            app:mp_title="Shop" />
+
+        <com.yarolegovich.mp.MaterialRightIconPreference
+            android:id="@+id/preview_weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mp_icon="@drawable/ic_weather_partlycloudy_black_24dp"
+            app:mp_icon_tint="@color/black"
+            app:mp_title="Weather" />
+
+        <com.yarolegovich.mp.MaterialRightIconPreference
+            android:id="@+id/preview_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mp_icon="@drawable/ic_collections_black_24dp"
+            app:mp_icon_tint="@color/black"
+            app:mp_title="Gallery" />
+
+    </com.yarolegovich.mp.MaterialPreferenceCategory>
+
+
+</com.yarolegovich.mp.MaterialPreferenceScreen>
