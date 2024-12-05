@@ -16,9 +16,7 @@ A scrollable list of items that centers the current element and provides easy-to
 
 <kbd>
 
-<video src="https://github.com/user-attachments/assets/5f5e2343-38b5-453e-85aa-f7843b2982ba" width="300" height="240" />
-
-<video src="https://github.com/user-attachments/assets/cf23d16b-7f59-4db6-8d14-10d36f46b26c" width="300" height="240" />
+<video src="https://github.com/user-attachments/assets/5f5e2343-38b5-453e-85aa-f7843b2982ba" width="30" height="40" /> <video src="https://github.com/user-attachments/assets/cf23d16b-7f59-4db6-8d14-10d36f46b26c" width="30" height="40" />
 
 </kbd>
 
