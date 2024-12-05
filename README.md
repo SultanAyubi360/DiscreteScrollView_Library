@@ -115,14 +115,112 @@ itemPicker.setAdapter(new GalleryAdapter(data)); <!-- giving list to our adapter
 
 ```
 
-* General
+#### General
 ```
 scrollView.setOrientation(DSVOrientation o); //Sets an orientation of the view
 scrollView.setOffscreenItems(count); //Reserve extra space equal to (childSize * count) on each side of the view
 scrollView.setOverScrollEnabled(enabled); //Can also be set using android:overScrollMode xml attribute
 ```
-* Related to the current item:
+#### Related to the current item:
 ```
+scrollView.getCurrentItem(); //returns adapter position of the currently selected item or -1 if adapter is empty.
+scrollView.scrollToPosition(int position); //position becomes selected
+scrollView.smoothScrollToPosition(int position); //position becomes selected with animated scroll
+scrollView.setItemTransitionTimeMillis(int millis); //determines how much time it takes to change the item on fling, settle or smoothScroll
+
+```
+
+#### Transformations
+One useful feature of ViewPager is page transformations. It allows you, for example, to create carousel effect. DiscreteScrollView also supports 
+page transformations.
+
+```
+scrollView.setItemTransformer(transformer);
+Because scale transformation is the most common, I included a helper class - ScaleTransformer, here is how to use it:
+
+ itemPicker.setItemTransformer(new ScaleTransformer.Builder()
+  .setMaxScale(1.05f) 
+  .setMinScale(0.8f) 
+  .setPivotX(Pivot.X.CENTER) // CENTER is a default one
+  .setPivotY(Pivot.Y.BOTTOM) // CENTER is a default one
+  .build());
+
+```
+#### Slide through multiple items
+
+To allow slide through multiple items call:
+```
+scrollView.setSlideOnFling(true);
+
+```
+Lower the threshold, more fluid the animation. You can adjust the threshold by calling:
+```
+
+scrollView.setSlideOnFlingThreshold(value);
+
+```
+#### Infinite scroll
+  
+Infinite scroll is implemented on the adapter level:
+```
+
+InfiniteScrollAdapter wrapper = InfiniteScrollAdapter.wrap(yourAdapter);
+scrollView.setAdapter(wrapper);
+```
+An instance of `InfiniteScrollAdapter` has the following useful methods:
+```
+int getRealItemCount();
+
+int getRealCurrentPosition();
+
+int getRealPosition(int position);
+
+/*
+ * You will probably want this method in the following use case:
+ * int targetAdapterPosition = wrapper.getClosestPosition(targetPosition);
+ * scrollView.smoothScrollTo(targetAdapterPosition);
+ * To scroll the data set for the least required amount to reach targetPosition.
+ */
+int getClosestPosition(int position);
+
+```
+Currently `InfiniteScrollAdapter` handles data set changes inefficiently, so your contributions are welcome. 
+
+#### Disabling scroll
+It's possible to forbid user scroll in any or specific direction using:
+
+```
+scrollView.setScrollConfig(config);
+
+```
+
+Where `config` is an instance of `DSVScrollConfig` enum. The default value enables scroll in any direction.
+
+#### Callbacks
+
+* Scroll state changes:
+```
+scrollView.addScrollStateChangeListener(listener);
+scrollView.removeScrollStateChangeListener(listener);
+
+```
+
+* Scroll:
+```
+scrollView.addScrollListener(listener);
+scrollView.removeScrollListener(listener);
+
+public interface ScrollListener<T extends ViewHolder> {
+  //The same as ScrollStateChangeListener, but for the cases when you are interested only in onScroll()
+  void onScroll(float scrollPosition, int currentIndex, int newIndex, @Nullable T currentHolder, @Nullable T newCurrentHolder);
+}
+
+```
+* Current selection changes:
+```
+
+scrollView.addOnItemChangedListener(listener);
+scrollView.removeOnItemChangedListener(listener);
 
 ```
 
@@ -141,6 +239,4 @@ However, if you get some profit from this or just want to encourage me to contin
 Support it by joining stargazers to this. ⭐
 
 Also, [follow me on GitHub](https://github.com/SultanAyubi360) for my next creations! 🤩
-
-
 
