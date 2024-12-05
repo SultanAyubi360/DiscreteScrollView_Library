@@ -80,3 +80,15 @@ dependencies {
 
 The GitHub project source includes a sample application, that is used for demonstrating the various features currently supported by this library. Once the library is added to your project, you can
 include the DiscreteScrollView into your activity/fragment layout using the following code snippets.
+
+
+## Find this library useful? :heart:
+
+However, if you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it. :coffee: :hamburger: :fries: :apple:
+
+Support it by joining stargazers to this. ⭐
+
+Also, [follow me on GitHub](https://github.com/SultanAyubi360) for my next creations! 🤩
+
+
+
