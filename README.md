@@ -16,19 +16,19 @@ A scrollable list of items that centers the current element and provides easy-to
 
 <kbd>
 
-<video src="https://github.com/user-attachments/assets/5f5e2343-38b5-453e-85aa-f7843b2982ba" width="25" height="40" /> 
+<video src="https://github.com/user-attachments/assets/5f5e2343-38b5-453e-85aa-f7843b2982ba" width="20" height="40" /> 
 
 </kbd>
 
 <kbd>
 
-<video src="https://github.com/user-attachments/assets/cf23d16b-7f59-4db6-8d14-10d36f46b26c" width="25" height="40" />
+<video src="https://github.com/user-attachments/assets/cf23d16b-7f59-4db6-8d14-10d36f46b26c" width="20" height="40" />
 
 </kbd>
 
 <kbd>
 
-<video src="https://github.com/user-attachments/assets/2c5c8617-8130-4f0f-824b-86d376c88fc2" width="25" height="40" />
+<video src="https://github.com/user-attachments/assets/2c5c8617-8130-4f0f-824b-86d376c88fc2" width="20" height="40" />
 
 </kbd>
 
