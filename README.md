@@ -82,7 +82,51 @@ code. All public API is accessible through DiscreteScrollView class, which is a 
 
 If you have ever used RecyclerView - you already know how to use this library. One thing to note - you should NOT set LayoutManager.
 
+### Step 3
 
+Add DiscreteScrollView to your layout either using xml or code:Add the following xml to your layout file.You can use the DiscreteScrollView in following manner:
+
+#### In XML:
+
+```
+ <com.sultanayubi.discretescrollviewlibrary.DiscreteScrollView
+        android:id="@+id/item_picker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/galleryBg"
+        app:dsv_orientation="vertical" /> <!-- orientation is optional, default is horizontal -->
+
+```
+---
+
+### Step 4
+
+Reference the View in Kotlin code.
+
+```
+DiscreteScrollView itemPicker = findViewById(R.id.item_picker); <!-- Using Find View By Id -->
+DiscreteScrollView itemPicker = binding.itemPicker; <!-- Using View Binding -->
+
+
+Gallery gallery = Gallery.get(); <!-- Using Gallery class have this method -->
+List<Image> data = gallery.getData(); <!-- getData method inside Gallery class -->
+
+itemPicker.setAdapter(new GalleryAdapter(data)); <!-- giving list to our adapter -->
+
+```
+
+* General
+```
+scrollView.setOrientation(DSVOrientation o); //Sets an orientation of the view
+scrollView.setOffscreenItems(count); //Reserve extra space equal to (childSize * count) on each side of the view
+scrollView.setOverScrollEnabled(enabled); //Can also be set using android:overScrollMode xml attribute
+```
+* Related to the current item:
+```
+
+```
+
+---
 
 ## Reporting an issue
 
