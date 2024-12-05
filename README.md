@@ -95,6 +95,23 @@ code. All public API is accessible through DiscreteScrollView class, which is a 
 
 If you have ever used RecyclerView - you already know how to use this library. One thing to note - you should NOT set LayoutManager.
 
+### Initialize in Application Class and mention app class in manifest.
+
+```
+
+@Override
+    public void onCreate() {
+        super.onCreate();
+        instance = this;
+        DiscreteScrollViewOptions.init(this);<!-- initialize here to use in project -->
+    }
+
+<application
+         android:name=".App" <!-- in manifest inside application tag -->
+</application
+
+```
+
 ### Step 3
 
 Add DiscreteScrollView to your layout either using xml or code:Add the following xml to your layout file.You can use the DiscreteScrollView in following manner:
