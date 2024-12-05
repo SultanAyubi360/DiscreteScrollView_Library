@@ -81,6 +81,12 @@ dependencies {
 The GitHub project source includes a sample application, that is used for demonstrating the various features currently supported by this library. Once the library is added to your project, you can
 include the DiscreteScrollView into your activity/fragment layout using the following code snippets.
 
+The library uses a custom LayoutManager to adjust items' positions on the screen and handle scroll, however it is not exposed to the client 
+code. All public API is accessible through DiscreteScrollView class, which is a simple descendant of RecyclerView.
+
+If you have ever used RecyclerView - you already know how to use this library. One thing to note - you should NOT set LayoutManager.
+
+
 
 ## Reporting an issue
 
