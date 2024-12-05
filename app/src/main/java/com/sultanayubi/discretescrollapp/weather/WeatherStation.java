@@ -18,11 +18,11 @@ public class WeatherStation {
 
     public List<Forecast> getForecasts() {
         return Arrays.asList(
-                new Forecast("Pisa", R.drawable.pisa, "16", Weather.PARTLY_CLOUDY),
-                new Forecast("Paris", R.drawable.paris, "14", Weather.CLEAR),
-                new Forecast("New York", R.drawable.new_york, "9", Weather.MOSTLY_CLOUDY),
-                new Forecast("Rome", R.drawable.rome, "18", Weather.PARTLY_CLOUDY),
-                new Forecast("London", R.drawable.london, "6", Weather.PERIODIC_CLOUDS),
-                new Forecast("Washington", R.drawable.washington, "20", Weather.CLEAR));
+                new Forecast("Islamabad", R.drawable.pisa, "16", Weather.PARTLY_CLOUDY),
+                new Forecast("Karachi", R.drawable.paris, "14", Weather.CLEAR),
+                new Forecast("Lahore", R.drawable.new_york, "9", Weather.MOSTLY_CLOUDY),
+                new Forecast("Multan", R.drawable.rome, "18", Weather.PARTLY_CLOUDY),
+                new Forecast("Rawalpindi", R.drawable.london, "6", Weather.PERIODIC_CLOUDS),
+                new Forecast("Peshawar", R.drawable.washington, "20", Weather.CLEAR));
     }
 }

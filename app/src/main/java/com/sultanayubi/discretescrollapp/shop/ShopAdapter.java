@@ -8,12 +8,9 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
 import com.sultanayubi.discretescrollapp.R;
 
-
 import java.util.List;
-
 
 public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
 
@@ -33,9 +30,8 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Glide.with(holder.itemView.getContext())
-                .load(data.get(position).getImage())
-                .into(holder.image);
+        // Load the drawable resource directly using the resource ID
+        holder.image.setImageResource(data.get(position).getImage());
     }
 
     @Override
