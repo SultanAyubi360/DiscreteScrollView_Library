@@ -11,3 +11,90 @@ A scrollable list of items that centers the current element and provides easy-to
 
 </div>
 
+
+## ✨ Screenshots
+
+<kbd>
+  <img src="https://i.ibb.co/FbQzjMz/Screenshot-20241119-162242.jpg" width=30% height=30%/>
+  <img src="https://i.ibb.co/jHZYkgd/Screenshot-20241119-162215.jpg.jpg" width=30% height=30%/>
+  <img src="https://i.ibb.co/SxRVgPp/Screenshot-20241119-162522.jpg" width=30% height=30%/>
+  <img src="https://i.ibb.co/J2DYZvb/Screenshot-20241119-163523.jpg" width=30% height=30%/>
+  <img src="https://i.ibb.co/qr0xhFt/Screenshot-20241119-163835.jpg" width=30% height=30%/>
+</kbd>
+
+
+## Usage
+
+### Step 1
+
+#### In older Gradle Style (Build.gradle (project level))
+```
+allprojects {
+  repositories {
+    ...
+    maven { url "https://maven.google.com" }
+    maven { url "https://jitpack.io" }
+    maven { url "https://repo.grails.org/grails/core/" }
+  }
+}
+```
+
+#### In New Project Structure (Settings.gradle)
+```
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        ......
+        maven { url "https://maven.google.com" }
+        maven { url "https://jitpack.io" }
+        maven { url "https://repo.grails.org/grails/core/" }
+        .....
+    }
+}
+```
+
+### Step 2
+
+Include the library as a local library project or add the dependency in your build.gradle.
+
+# For groovy DSL
+
+```
+dependencies {
+   implementation 'com.github.SultanAyubi360:DiscreteScrollView_Library:1.0'
+}
+```
+
+# For Kotlin DSL
+
+
+```
+dependencies {
+    implementation ("com.github.SultanAyubi360:DiscreteScrollView_Library:1.0")
+}
+```
+
+---
+
+## Using DiscreteScrollView Library
+
+The GitHub project source includes a sample application, that is used for demonstrating the various features currently supported by this library. Once the library is added to your project, you can
+include the DiscreteScrollView into your activity/fragment layout using the following code snippets.
+
+
+## Reporting an issue
+
+If you are going to report an issue, I will greatly appreciate you including some code which I can run to see the issue. By doing so you maximize the chance that I will fix the problem. 
+By the way, before reporting a problem, try replacing DiscreteScrollView with a RecyclerView. If the problem is still present, it's likely somewhere in your code.
+
+
+## Find this library useful? :heart:
+
+However, if you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it. :coffee: :hamburger: :fries: :apple:
+
+Support it by joining stargazers to this. ⭐
+
+Also, [follow me on GitHub](https://github.com/SultanAyubi360) for my next creations! 🤩
+
+
+
