@@ -15,7 +15,9 @@ A scrollable list of items that centers the current element and provides easy-to
 ## ✨ Sample
 
 <kbd>
- 
+
+https://github.com/user-attachments/assets/560ae1d5-738b-4962-9078-e16f1537fe2e
+
 </kbd>
 
 
