@@ -19,6 +19,7 @@ A scrollable list of items that centers the current element and provides easy-to
 * Shop
 https://github.com/user-attachments/assets/258888e2-3efd-491e-926b-b774f4a0a861 
 
+
 * Weather
 https://github.com/user-attachments/assets/cf23d16b-7f59-4db6-8d14-10d36f46b26c
 
