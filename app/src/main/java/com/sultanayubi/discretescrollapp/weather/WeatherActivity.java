@@ -29,6 +29,7 @@ public class WeatherActivity extends AppCompatActivity implements
     private ForecastView forecastView;
     private DiscreteScrollView cityPicker;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
