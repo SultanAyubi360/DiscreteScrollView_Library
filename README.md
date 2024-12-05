@@ -26,6 +26,12 @@ A scrollable list of items that centers the current element and provides easy-to
 
 </kbd>
 
+<kbd>
+
+<video src="https://github.com/user-attachments/assets/2c5c8617-8130-4f0f-824b-86d376c88fc2" width="30" height="40" />
+
+</kbd>
+
 ## Usage
 
 ### Step 1
