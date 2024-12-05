@@ -82,6 +82,12 @@ The GitHub project source includes a sample application, that is used for demons
 include the DiscreteScrollView into your activity/fragment layout using the following code snippets.
 
 
+## Reporting an issue
+
+If you are going to report an issue, I will greatly appreciate you including some code which I can run to see the issue. By doing so you maximize the chance that I will fix the problem. 
+By the way, before reporting a problem, try replacing DiscreteScrollView with a RecyclerView. If the problem is still present, it's likely somewhere in your code.
+
+
 ## Find this library useful? :heart:
 
 However, if you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it. :coffee: :hamburger: :fries: :apple:
