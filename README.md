@@ -7,7 +7,7 @@ A scrollable list of items that centers the current element and provides easy-to
 <div align="center">
 	
 [![](https://jitpack.io/v/SultanAyubi360/DiscreteScrollView_Library.svg)](https://jitpack.io/#SultanAyubi360/DiscreteScrollView_Library/1.0)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)  ![Kotlin](https://img.shields.io/badge/Kotlin-100%25-brightgreen)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Kotlin](https://img.shields.io/badge/Kotlin-100%25-brightgreen)
 
 </div>
 
